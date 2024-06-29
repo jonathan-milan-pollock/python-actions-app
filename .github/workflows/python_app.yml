@@ -38,7 +38,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Azure Login
-        uses: Acure/login@v1.5.1
+        uses: azure/login@v1.5.1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           enable-AzPSSession: true

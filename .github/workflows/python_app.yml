@@ -30,6 +30,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # - name: Test with pytest
+      #  run: pytest 
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
